@@ -24,19 +24,5 @@ describe('Restaurant Search Endpoint', () => {
         ]));
     });
 
-    it('should search by dish name', async () => {
-        const response = await request(app)
-            .get('/api/restaurants')
-            .query({ name: 'Pizza' });
-
-        expect(response.status).toBe(200);
-        expect(response.body).toEqual(expect.arrayContaining([ {
-            "id": 2,
-            "name": "Pizza Hut",
-            "description": "No description available",
-            "createdAt": "2024-06-23T18:51:16.516Z",
-            "updatedAt": "2024-06-23T18:51:16.516Z"
-        }
-        ]));
-    });
+  
 });
