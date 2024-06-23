@@ -22,8 +22,11 @@ A Node.js application using Sequelize to manage a restaurant menu system with `R
 
 ```sh
 node src/index.js
+```
+
 
 ## Running the Test cases
 
 ```sh
 npx jest
+```
